@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>My Loop</title>
+    </head>
+
+    <body>
+        {% for A in range(1,101) %}
+            {% if A % 3 == 0 and A % 5 != 0 %}
+                <p>{{ "Fizz" }}</p>
+            {% endif %}
+            {% if A % 3 == 0 and A % 5 == 0 %}
+                <p>{{ "FizzBuzz" }}</p>
+            {% endif %}    
+            {% if A % 5 == 0 and A% 3 != 0 %}
+                <p>{{ "Buzz" }}</p>
+            {% endif %}
+            {% if A % 3 != 0 and A % 5 != 0 %}
+                <p>{{ A }}</p>
+            {% endif %}
+        {% endfor %}
+        <pre><h3> Good morning. {{ A }} {{ n }} {{  name }}</h3>
+        <h3> {{  second }} </h3></pre>
+    </body>
+    
+</html>
